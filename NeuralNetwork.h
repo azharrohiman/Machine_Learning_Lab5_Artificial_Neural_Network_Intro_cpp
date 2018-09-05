@@ -18,12 +18,21 @@ namespace RHMMUH005 {
 			int num_hidden_nodes;
 			int num_output_nodes;
 
+			MatrixXd inputs;
+
 			MatrixXd weights_input_hidden;
 			MatrixXd weights_hidden_output;
 
+			MatrixXd hidden_biases;
+			MatrixXd output_bias;
+
 		public:
 			NeuralNetwork();
-			NeuralNetwork(int, int, int, MatrixXd);
+			NeuralNetwork(int, int, int, MatrixXd, MatrixXd, MatrixXd, MatrixXd, MatrixXd);
+
+			void feedForward();
+
+			double sigmoid(double);
 
 	};
 }
