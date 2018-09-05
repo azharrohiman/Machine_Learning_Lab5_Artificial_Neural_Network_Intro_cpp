@@ -34,6 +34,8 @@ namespace RHMMUH005 {
 
 			double sigmoid(double);
 
+			double mse(double);
+
 	};
 }
 

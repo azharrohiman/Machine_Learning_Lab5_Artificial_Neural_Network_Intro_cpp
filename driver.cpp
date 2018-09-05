@@ -50,5 +50,7 @@ int main(int argc, char* argv[]) {
 	RHMMUH005::NeuralNetwork neuralNetworkObj(3, 2, 1, input, weights_input_hidden, weights_hidden_output, hidden_biases, output_bias);
 	neuralNetworkObj.feedForward();
 
+	cout << "Running process" << endl;
+
 	return 0;
 }
